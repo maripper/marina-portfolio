@@ -1,0 +1,3 @@
+ADMIN_USER=user
+ADMIN_PASSW=passw
+ADMIN_EMAIL=email
