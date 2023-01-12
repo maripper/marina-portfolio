@@ -148,7 +148,7 @@
         * Footer
         */
         .blog-footer {
-        padding: 2.5rem 0;
+        padding: 3.5rem 0;
         color: #00CED1;
         text-align: center;
         background-color: white;
@@ -197,12 +197,12 @@
             <div class="col-md-6">
               <div class="card flex-md-row mb-4 box-shadow h-md-250">
                 <div class="card-body d-flex flex-column align-items-start">
-                <a href="#">
+                <a href="{% url 'artistic'%}">
                     <img src='https://res.cloudinary.com/hd2rav1iu/image/upload/v1673371649/Screenshot_from_2023-01-10_14-26-28_apdeux.png' alt="" width="60" height="40">
                     <p class="img__description" style="width:30px;height:30px;"><strong>Git</strong></p>
                     </a>
                   <h3 class="mb-0">
-                    <a class="text-dark" href="#find">Art Portfolio</a>
+                    <a class="text-dark" href="{% url 'artistic'%}">Art Portfolio</a>
                   </h3> 
                   <a class="card-text mb-auto" style="color:black;" href="{% url 'artistic'%}" target=”_blank”>Acess the Art Portfolio!</a>
                   {% comment %} <a href = "">Continue reading</a>   {% endcomment %}
@@ -210,6 +210,24 @@
                 <img class="card-img-right flex-auto d-none d-md-block" src="https://res.cloudinary.com/hd2rav1iu/image/upload/v1673371044/Untitled_Diagram.drawio_a5czc9.png" alt="Card image cap">
               </div>
             </div>
+          </div>
+          <div class="jumbotron p-3 p-md-6 rounded" style = "background-color: white !IMPORTANT;">
+            {% comment %} <div class="col-md-6 px-0"> {% endcomment %}
+              <div class="card flex-md-row mb-5 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                <a href="{% url 'research'%}">
+                    <img src='https://res.cloudinary.com/hd2rav1iu/image/upload/v1673371649/Screenshot_from_2023-01-10_14-26-28_apdeux.png' alt="" width="60" height="40">
+                    <p class="img__description" style="width:30px;height:30px;"><strong>Git</strong></p>
+                    </a>
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="{% url 'research'%}">Scientific Research Portfolio</a>
+                  </h3> 
+                  <a class="card-text mb-auto" style="color:black;" href="{% url 'research'%}" target=”_blank”>Acess the Scientific Research Portfolio!</a>
+                  {% comment %} <a href = "">Continue reading</a>   {% endcomment %}
+                </div>
+                <img class="card-img-right flex-auto d-none d-md-block" src="https://res.cloudinary.com/hd2rav1iu/image/upload/v1673371044/Untitled_Diagram.drawio_a5czc9.png" alt="Card image cap">
+              </div>
+            {% comment %} </div> {% endcomment %}
           </div>
         </div>
 
@@ -233,21 +251,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href = "#art" style="color:black;">
-                            Artistic Work 
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "#math" style="color:black;">
-                            Mathmatics
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "#diferencial" style="color:black;">
-                            Diferencial da Stone
-                        </a>
-                    </li>
-                    <li>
                         <a href = "#funfact" style="color:black;">
                             Fun Facts
                         </a>
@@ -256,67 +259,46 @@
               </div>
             
             <div class="blog-post">
-              <h2 class="blog-post-title" id="me" style = "color:#00CED1;">Mercado de Pagamentos</h2>
-              <p><strong>Como funciona o mercado de pagamentos?</strong></p>
+              <h2 class="blog-post-title" id="me" style = "color:#00CED1;">About Me!</h2>
               <hr>
-              <img src = "https://res.cloudinary.com/hhx0pttis/image/upload/v1667927908/samples/mercado-de-pagamentos_esquema-aberto-2_ta9tey.jpg"></img>
+              <p style = "color:#00CED1;">I am an American and Brazil Applied Mathmatician! I began coursing Physics and Economics before I coursed Applied Mathematics, even though I liked the courses I believed Mathematics was my calling! I Have done research in Biomathematics with focus in Neglected Diseases.</p>
+              <p style = "color:#00CED1;">I am very passionate about software development, I had 2 C Programming courses in College, though most of my knowledge is self-taught!</p>              
+              <p style = "color:#00CED1;">I am also an hobby Artist and Musician! you can see my work in my Art Portfolio!</p>
+              <img src = "https://res.cloudinary.com/hd2rav1iu/image/upload/v1673455792/IMG_3577_h5ar4k.jpg"></img>
             </div><!-- /.blog-post -->
             <div class="blog-post">
-                <h2 class="blog-post-title" id="prog" style = "color:#00CED1;">Cultura</h2>
+                <h2 class="blog-post-title" id="prog" style = "color:#00CED1;">Programming Skills</h2>
 
-                <p>Conheça a Cultura da Stone!</p>
-                <hr>
-                <p style = "color:#00CED1;">OWN IT</p>
-                <ul>
-                    <li>Seja dono de suas escolhas. </li>
-                </ul>  
-                <p style = "color:#00CED1;">NO BULLSHIT</p>              
-                <ul>
-                    <li>Vá e conquiste.</li>
-                </ul>
-                <p style = "color:#00CED1;">TEAMPLAY</p>
-                <ul>
-                    <li>Trabalho em equipe vai mais longe!!.</li>
-                </ul>
-                <p style = "color:#00CED1;">LIVE THE RIDE</p>
-                <ul>
-                    <li>Viva a jornada. Trabalhe com propósito.</li>
-                </ul>
-                <p style = "color:#00CED1;">LIVE THE RIDE</p>
-                <ul>
-                    <li>O cliente É a razão.</li>
-                </ul>
-            </div><!-- /.blog-post -->
-            <div class="blog-post">
-                <h2 class="blog-post-title" id="art" style = "color:#00CED1;">Serviços</h2>
-    
-                <p>Conheça os serviços da Stone.</p>
+                <p>Programming Skills!</p>
                 <hr>
                 <ul>
-                  <li>Máquina de cartão de crédito</li>
-                  <li>Conta Digital</li>
-                  <li>Controle de Inventário</li>
-                  <li>Folha de pagamento</li>
-                  <li>PRP</li>
-                  <li>Registro de Vendas</li>
+                  <li>Mathematical Modelling</li>
+                  <li>C Language</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>Data Science</li>
+                  <li>AWS</li>
+                  <li>Django</li>
+                  <li>SQL</li>
+                  <li>FastAPI</li>
+                  <li>Flask</li>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Kubernetes</li>
+                  <li>Docker</li>
 
                 </ul>
                 </div><!-- /.blog-post -->
-    
-              <div class="blog-post">
-                <h2 class="blog-post-title" id="math" style = "color:#00CED1;">Pilares</h2>
-                <ul>
-                    <li>Alocação de Capital</li>
-                    <li>Alocação de talento</li>
-                    <li>Cultura de Inovação</li>
-                </ul>
-    
+        
                 <div class="blog-post">
                     <h2 class="blog-post-title" id="funfact" style = "color:#00CED1;">Fun Facts!</h2>
                     <ul>
-                      <li>Investimento de 600 milhões em ações de Berkshire Hathaway em 2018.</li>
-                      <li>O primeiro cliente Geraldo Mineiro, estava junto apertando o botão no lançamento do IPO da Stone em NY.</li>
-                      <li>Stone tem uma participação diferenciada no mercado digital.</li>
+                      <li>I have done 15 sports and competed in 5 of them.</li>
+                      <li>I have done sewing classes and made my own clothes.</li>
+                      <li>I have been part of a Conservatory of Music in Brazil and studied Piano for 5 years.</li>
+                      <li>I am a self taught artist.</li>
+                      <li>I am a jazz and MPB composer and singer.</li>
                     </ul>
                 </div><!-- /.blog-post -->  
     

@@ -24,7 +24,7 @@ urlpatterns = [
     path('welcome/', views.welcome,name='welcome'),
     path('start/', views.start,name='start'),
     path('software_development/', views.software_development,name='software_development'),
-    path('research/', views.software_development,name='research'),
+    path('research/', views.research,name='research'),
     path('artistic/', views.artistic,name='artistic'),
     path(
     "favicon.ico",
