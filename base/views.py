@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect
 
 import requests as req
 
@@ -15,6 +15,13 @@ import json
 import ast
 
 # perform business logic
+@csrf_exempt
+
+def home(request):
+
+    return redirect('Home.views.welcome')
+
+
 
 @csrf_exempt
 
