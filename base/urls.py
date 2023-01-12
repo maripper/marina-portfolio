@@ -21,15 +21,15 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 
 
 urlpatterns = [
-    path('/', views.home,name='home'),
-    path('/portfolio/welcome', views.welcome,name='welcome'),
-    path('/portfolio/start', views.start,name='start'),
-    path('/portfolio/software_development', views.software_development,name='software_development'),
-    path('/portfolio/research', views.research,name='research'),
-    path('/portfolio/artistic', views.artistic,name='artistic'),
+    path('', views.home,name='home'),
+    path('welcome/', views.welcome,name='welcome'),
+    path('start/', views.start,name='start'),
+    path('software_development/', views.software_development,name='software_development'),
+    path('research/', views.research,name='research'),
+    path('artistic/', views.artistic,name='artistic'),
     # path(
     # "favicon.ico",
-    # RedirectView.as_view(url="https://res.cloudinary.com/hd2rav1iu/image/upload/v1673371648/favicon-96x96_dd46cc.png"),
+    # RedirectView.as_view(url="https://res.cloudinary.com/hhx0pttis/image/upload/v1667924921/samples/favicon_ssi6ij.ico"),
     # )
 
 ]
